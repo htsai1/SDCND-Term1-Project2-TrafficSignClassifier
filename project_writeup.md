@@ -57,11 +57,10 @@ Number of classes = 43
 
 
 ####2. Include an exploratory visualization of the dataset.
-*Gaol is to create an exploratory visualization of the data set. 
-*I used matplotlib to plot out few images from the training dataset. 
-*And used histogram to create the sample distribution list with counts of each label.
 
+Gaol is to create an exploratory visualization of the data set. I used matplotlib to plot out few images from the training dataset. And used histogram to create the sample distribution list with counts of each label.
 ![alt text][image1]
+
 
 ###Design and Test a Model Architecture
 
