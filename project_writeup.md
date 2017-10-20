@@ -17,12 +17,14 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/writeup_image_visualization_of_dataset.JPG "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image3]: ./downloaded_images/random_noise.jpg "Random Noise"
+[image4]: ./downloaded_images/0_20.jpg "Traffic Sign 1"
+[image5]: ./downloaded_images/13_yield.jpg "Traffic Sign 2"
+[image6]: ./downloaded_images/14_stop.jpg "Traffic Sign 3"
+[image7]: ./downloaded_images/27_pedestrian.jpg "Traffic Sign 4"
+[image8]: ./downloaded_images/28_child.jpg "Traffic Sign 5"
+[image9]: ./downloaded_images/4_70.jpg "Traffic Sign 6"
+[image10]: ./downloaded_images/40_roundabout.jpg "Traffic Sign 7"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -123,26 +125,30 @@ I end up had to tune several parameters (like epoch) for improving validation ac
 Added dropout layer (tf.nn.dropout).
 * Which parameters were tuned? How were they adjusted and why?
 
-tuned epoch. Increased epoch from 10 to 20 improved the accuracy from ~0.93 to ~0.95.
+Epoch was tuned: Increased epoch from 10 to 20 improved the accuracy from ~0.93 to ~0.95.
+Dropout keep probability was tuned: Initially I used 0.5 and the outcome accuracy was not as good as using 0.65.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-Dropout layer definitely helped due to it preventing overfitting. However the keep probability also has a certain level of effect, as initially i use 0.5 and the outcome accuracy was not as good as using 0.65.
+Dropout layer definitely helped due to it preventing overfitting. However the keep probability also has a certain level of effect.
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+I referenced LeNet architecture and modified the parameters.
 * Why did you believe it would be relevant to the traffic sign application?
+Suggested in class that is a good starting architecture for traffic sign classification.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+ After the modification mentioned above, the validation accuracy could reach above 0.95 and test accuracy could reach above 0.93. 
 
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+I picked 7 German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image10]
+![alt text][image9]
 
-The first image might be difficult to classify because ...
+The children crossing sign is difficult to classified due to low resolution of the image, and the graph is much complicated than numerical numbers.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -150,14 +156,15 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Speed limit (20km/h)      		| ID0: Speed limit (20km/h)   									| 
+| Yield					| ID13: Yield											|
+| Stop	      		| ID14: Stop					 				|
+| Pedestrians			| ID27: Pedestrians     							|
+| Childern Crossing			| ID11: Right-of-way at the next intersection    							|
+| Roundabout mandatory			| ID40: Roundabout mandatory     							|
+| Speed limit (70km/h) 		| ID25: Road work     							|
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71%. This compares favorably to the accuracy on the test set of 93% it is lower but I believe it is because I only test 7 images so far, the accuracy will increase if I test out more new images.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -167,14 +174,15 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.0        			| ID0: Speed limit (20km/h)   	  									| 
+| 1.0     				| ID13: Yield 										|
+| 1.0					| ID14: Stop										|
+| 0.999	      			| ID27: Pedestrians 					 				|
+| 0.992				    | ID11: Right-of-way at the next intersection    							|
+| 0.992				    | ID40: Roundabout mandatory							|
+| 0.997				    | ID25: Road work    							|
 
-
-For the second image ... 
+Looking into the softmax probabilities for each prediction, I found that all correct predictions have almost 1.0 probability on the correct answer. The two wrong predictions show 0.992 & 0.997, which still too high but show the relatively low confidence level. especially on the Child Crossing sign, the right answer is on the 2nd place (0.07) among the 5 softmax probabilities. 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
