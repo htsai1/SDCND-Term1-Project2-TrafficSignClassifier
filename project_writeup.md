@@ -59,6 +59,7 @@ Number of classes = 43
 ####2. Include an exploratory visualization of the dataset.
 
 Gaol is to create an exploratory visualization of the data set. I used matplotlib to plot out few images from the training dataset. And used histogram to create the sample distribution list with counts of each label.
+
 ![alt text][image1]
 
 
@@ -66,23 +67,13 @@ Gaol is to create an exploratory visualization of the data set. I used matplotli
 
 ####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because ...
+Step1: I decided to convert the images to grayscale (rgb2gray) because the classification doesnt necessarily need color, i.e. all three RGB, to do the traffic sign classification, sigle channel gray scale should be sufficient. This also help improve the processing time.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![alt text][image2]
 
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+Step2: I normalized the image data because to be close to orgin, between -1.0 and 0.1 because of mathematical reasons, i.e. for the better numerical stability, it is suggested in the class that to keep value you compute roughly around a mean of zero and have equal variance when you do the optimization. This make it easier for optimizer for doing searching and find a good solution.
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
