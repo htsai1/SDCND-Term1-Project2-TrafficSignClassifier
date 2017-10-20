@@ -41,20 +41,35 @@ You're reading it! and here is a link to my [project code implementation](https:
 I used the numpy to calculate summary statistics of the traffic signs data set, below answers are outputs from the code.
 
 * The size of training set is ?
+
 As output from the node: Number of training examples = 34799
+
 * The size of the validation set is ?
+
 As output from the node: Number of validation examples = 4410
+
 * The size of test set is ?
+
 As output from the node: Number of testing examples = 12630
+
 * The shape of a traffic sign image is ?
+
 Image data shape = 34799
+
 * The number of unique classes/labels in the data set is ?
+
 Number of classes = 43
 
+
+
 ####2. Include an exploratory visualization of the dataset.
+
 Gaol is to create an exploratory visualization of the data set. 
+
 I used matplotlib to plot out few images from the training dataset. 
+
 And used histogram to create the sample distribution list with counts of each label.
+
 ![Visualization of the training data set][writeup_image_visualization of dataset]
 
 ###Design and Test a Model Architecture
