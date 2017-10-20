@@ -16,14 +16,14 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/writeup_image_visualization_of_dataset.JPG "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image4]: ./downloaded_images/0_20.jpg "Traffic Sign 1"
-[image5]: ./downloaded_images/13_yield.jpg "Traffic Sign 2"
-[image6]: ./downloaded_images/14_stop.jpg "Traffic Sign 3"
-[image7]: ./downloaded_images/27_pedestrian.jpg "Traffic Sign 4"
-[image8]: ./downloaded_images/28_child.jpg "Traffic Sign 5"
-[image9]: ./downloaded_images/4_70.jpg "Traffic Sign 6"
-[image10]: ./downloaded_images/40_roundabout.jpg "Traffic Sign 7"
+[image2]: ./examples/grayscale.JPG "Grayscaling"
+[image4]: ./downloaded_images/0_20.JPG "Traffic Sign 1"
+[image5]: ./downloaded_images/13_yield.JPG "Traffic Sign 2"
+[image6]: ./downloaded_images/14_stop.JPG "Traffic Sign 3"
+[image7]: ./downloaded_images/27_pedestrian.JPG "Traffic Sign 4"
+[image8]: ./downloaded_images/28_child.JPG "Traffic Sign 5"
+[image9]: ./downloaded_images/4_70.JPG "Traffic Sign 6"
+[image10]: ./downloaded_images/40_roundabout.JPG "Traffic Sign 7"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
