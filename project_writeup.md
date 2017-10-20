@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/writeup_image_visualization_of_dataset.JPG "Visualization"
-[image2]: ./examples/grayscale.JPG "Grayscaling"
+[image2]: ./examples/grayscale.jpg "Grayscaling"
 [image4]: ./downloaded_images/0_20.JPG "Traffic Sign 1"
 [image5]: ./downloaded_images/13_yield.JPG "Traffic Sign 2"
 [image6]: ./downloaded_images/14_stop.JPG "Traffic Sign 3"
