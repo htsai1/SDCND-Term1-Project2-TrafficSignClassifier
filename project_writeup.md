@@ -168,7 +168,7 @@ Here are the results of the prediction:
 | Roundabout mandatory			| ID40: Roundabout mandatory     							|
 | Speed limit (70km/h) 		| ID25: Road work     							|
 
-The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71%. This compares favorably to the accuracy on the test set of 93% it is lower but I believe it is because I only test 7 images so far, the accuracy will increase if I test out more new images.
+The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71%. This compares favorably to the accuracy on the test set of 93% it is lower but I believe it is because I only tested 7 images so far, the accuracy should increase if I test out more new images.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
