@@ -17,7 +17,6 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/writeup_image_visualization_of_dataset.JPG "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./downloaded_images/random_noise.jpg "Random Noise"
 [image4]: ./downloaded_images/0_20.jpg "Traffic Sign 1"
 [image5]: ./downloaded_images/13_yield.jpg "Traffic Sign 2"
 [image6]: ./downloaded_images/14_stop.jpg "Traffic Sign 3"
