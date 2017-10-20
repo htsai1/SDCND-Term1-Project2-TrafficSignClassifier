@@ -127,15 +127,20 @@ Added dropout layer (tf.nn.dropout).
 Epoch was tuned: Increased epoch from 10 to 20 improved the accuracy from ~0.93 to ~0.95.
 Dropout keep probability was tuned: Initially I used 0.5 and the outcome accuracy was not as good as using 0.65.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 Dropout layer definitely helped due to it preventing overfitting. However the keep probability also has a certain level of effect.
+
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+
 I referenced LeNet architecture and modified the parameters.
 * Why did you believe it would be relevant to the traffic sign application?
+
 Suggested in class that is a good starting architecture for traffic sign classification.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- After the modification mentioned above, the validation accuracy could reach above 0.95 and test accuracy could reach above 0.93. 
+
+After the modification mentioned above, the validation accuracy could reach above 0.95 and test accuracy could reach above 0.93. 
 
 ###Test a Model on New Images
 
