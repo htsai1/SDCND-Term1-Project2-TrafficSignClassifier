@@ -111,7 +111,7 @@ My final model results were:
 * validation set accuracy of 0.956
 * test set accuracy of 0.932
 
-If an iterative approach was chosen:
+####If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 
 I referenced LeNet as it was taught in the class. 
