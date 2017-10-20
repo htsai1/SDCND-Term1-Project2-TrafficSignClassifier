@@ -185,5 +185,6 @@ Looking into the softmax probabilities for each prediction, I found that all cor
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+
 N/A. To be continued.
 
