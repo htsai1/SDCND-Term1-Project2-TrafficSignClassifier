@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./examples/writeup_image_visualization of dataset.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -40,19 +40,19 @@ You're reading it! and here is a link to my [project code implementation](https:
 *I used the numpy to calculate summary statistics of the traffic signs data set, below answers are outputs from the code.
 
 * The size of training set is ?
-*As output from the node: Number of training examples = 34799
+As output from the node: Number of training examples = 34799
 
 * The size of the validation set is ?
-*As output from the node: Number of validation examples = 4410
+As output from the node: Number of validation examples = 4410
 
 * The size of test set is ?
-*As output from the node: Number of testing examples = 12630
+As output from the node: Number of testing examples = 12630
 
 * The shape of a traffic sign image is ?
-*Image data shape = 34799
+Image data shape = 34799
 
 * The number of unique classes/labels in the data set is ?
-*Number of classes = 43
+Number of classes = 43
 
 
 
